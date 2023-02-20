@@ -1,0 +1,130 @@
+baseURL = 'https://stevescargall.com'
+languageCode = 'en-us'
+title = 'Steve Scargall'
+theme = 'fulltilt'
+
+DefaultContentLanguage = "en"
+
+[permalinks]
+  blog = '/blog/:year/:month/:title/'
+
+# Site specific parameters
+[params]
+  # Site Logo
+  logo = "/images/SS-Logo-Orange-Red-with-SteveScargall.png"
+
+  # Enable the darkmode toggle in header
+  darkModeToggle = true
+  
+  # Enable search in header
+  enableSearch = true
+
+  # Option to customize the search parameters of a page
+  # Below are the supported options; Note that including entire content
+  # may slowdown the loading of search results
+  # Title of page is included by default
+  searchKeys = [
+    "tags",
+    "date",
+    "categories",
+    "summary",
+    "content",
+    "link",
+    "author"
+  ]
+
+  # Custom copyright - optional
+  # '{currentYear}' is replaced at build time
+  copyright = "Copyright &copy; {currentYear} - Steve Scargall. All rights reserved."
+
+  # Favicon
+  faviconSizes = [16, 32, 48]
+  favicon = "/images/favicon.png"
+  
+  # Used to hide the post metadata such as posted date, reading time and word count
+  # Can be used at site level or page level
+  hideMeta = false
+
+  # The page bundle that is shown on the front page
+  frontBundle = "blog"
+
+  # Google Analytics 4
+  # https://gohugo.io/templates/internal/
+  googleAnalytics = 'G-KZ8K264HFZ'
+
+# Main Menu
+# https://gohugo.io/content-management/menus
+[menu]
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog"
+  weight = 1
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects"
+  weight = 2
+[[menu.main]]
+  identifier = "about"
+  name = "About Me"
+  url = "/about"
+  weight = 3
+
+# Related Posts
+# https://gohugo.io/content-management/related/
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+[[related.indices]]
+  name = 'categories'
+  weight = 100
+[[related.indices]]
+  name = 'tags'
+  weight = 90
+[[related.indices]]
+  name = 'keywords'
+  weight = 80
+[[related.indices]]
+  name = 'date'
+  weight = 10
+
+# GDPR Compliance
+# https://gohugo.io/about/hugo-and-gdpr/
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true

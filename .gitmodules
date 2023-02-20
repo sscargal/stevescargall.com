@@ -1,0 +1,3 @@
+[submodule "themes/fulltilt"]
+	path = themes/fulltilt
+	url = https://github.com/sscargal/fulltilt-hugo-theme
