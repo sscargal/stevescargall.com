@@ -1,4 +1,4 @@
-baseURL = 'https://stevescargall.com'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Steve Scargall'
 theme = 'fulltilt'
