@@ -11,7 +11,7 @@ DefaultContentLanguage = "en"
 # Site specific parameters
 [params]
   # Site Logo
-  logo = "/images/SS-Logo-Orange-Red-with-SteveScargall.png"
+  logo = "/images/SS-Logo-Orange-Red-with-SteveScargall-186x26px.png"
 
   # Enable the darkmode toggle in header
   darkModeToggle = true
