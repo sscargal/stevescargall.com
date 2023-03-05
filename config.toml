@@ -6,7 +6,7 @@ theme = 'fulltilt'
 DefaultContentLanguage = "en"
 
 [permalinks]
-  blog = '/blog/:year/:month/:title/'
+  blog = '/blog/:year/:month/:day/:title/'
 
 # Site specific parameters
 [params]
