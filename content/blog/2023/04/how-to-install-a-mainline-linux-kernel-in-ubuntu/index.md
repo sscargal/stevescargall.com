@@ -17,7 +17,7 @@ tags = ["ubuntu", "linux", "kernel", "mainline"]
 categories = ["linux", "how to"]
 
 # Featured Image
-image = "images/_95d33778-4653-4b03-b927-e91884440d9b.jpeg"
+image = "images/_6bd5d195-ab4b-44d7-b628-49ce6aa7ca59-min.jpeg"
 +++
 # How To Install a Mainline Linux Kernel in Ubuntu
 
