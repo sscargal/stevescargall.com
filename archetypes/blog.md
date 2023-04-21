@@ -6,7 +6,7 @@ title = "{{ replace .Name "-" " " | title }}"
 date = {{ .Date }}
 
 # Post is a Draft = True|False
-draft = true
+draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = []
@@ -17,5 +17,5 @@ tags = []
 categories = ['Uncategorized']
 
 # Featured Image
-image = ''
+featured_image = ''
 +++
