@@ -20,7 +20,6 @@ categories = ['how to', 'linux']
 featured_image = 'server_featured_image_900x600-min.jpeg'
 +++
 
-# A Practical Guide to Identify Compute Express Link (CXL) Devices in Your Server
 
 In this article, we will provide four methods for identifying CXL devices in your server and how to determine which CPU socket and NUMA node each CXL device is connected.  We will use CXL memory expansion (CXL.mem) devices for this article. The server was running Ubuntu 22.04.2 (Jammy Jellyfish) with Kernel 6.3 and '[cxl-cli](https://github.com/pmem/ndctl)' version 75 built from source code. Many of the procedures will work on Kernel versions 5.16 or newer.
 
